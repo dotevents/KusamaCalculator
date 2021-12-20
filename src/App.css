@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4faff;
+}
+
+.navbar-nav {
+  padding-left: 35rem;
+  
+  /* margin-left: 1 25px; */
+}
+.customNav {
+  
+  justify-content: flex-end;
+}
+
+.customNav .navbar-nav a {
+  justify-content: end;
+  margin: 0 25px;
+  font-weight: bold;
+  color: #333 !important;
+}
+
+.logo {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.logo span {
+  color: #e60079;
+}
+
+.calContainer {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 116px);
+}
+
+.customCard {
+  background: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  padding: 50px;
+}
+
+
+.imgBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.currencyDisplay {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  text-decoration: none;
+  color: #000;
+  margin-top: 30px;
+}
+
+.currencyDisplay:hover {
+  color: #333;
+}
+
+.inputContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px 0;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 3px 90px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.inputContainer input {
+  border: none !important;
+  height: 50px;
+  padding-left: 15px;
+}
+
+.inputContainer input:focus {
+  outline: none;
+}
+
+.inputContainer .css-1s2u09g-control {
+  border: none !important;
+}
+
+.inputContainer .css-1hb7zxy-IndicatorsContainer {
+  padding: 0 30px 0 0;
+}
+
+.inputContainer .css-tlfecz-indicatorContainer {
+  padding-left: 15px;
+}
+
+.inputContainer .css-1okebmr-indicatorSeparator {
+  background-color: #eee;
+}
+
+.convert {
+  background: #e60079;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 62px;
+  line-height: 62px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+@media screen and (max-width: 600px){
+  .logo {
+    font-size: 20px;
+  }
+  .imgBlock{
+    display: none;
+  }
+
+  .inputContainer{
+    grid-template-columns: 40% 60%;
+  }
+
+  .inputContainer .css-1hb7zxy-IndicatorsContainer{
+    padding: 0;
+  }
+
+  .customCard{
+    padding: 10px;
+  }
+
+  .currencyDisplay{
+    font-size: 20px;
+  }
+}
